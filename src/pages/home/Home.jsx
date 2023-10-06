@@ -4,6 +4,7 @@ import './Home.css'
 import progImg from '../../assets/images/programming.svg'
 import CourseItem from '../../components/course/CourseItem'
 import { useState } from 'react'
+import Footer from '../../components/footer/Footer'
 function Home(){
 
     const [courses, setCourses] = useState([
@@ -55,6 +56,7 @@ function Home(){
                 ) )}
             </Row>
         </Container>
+        <Footer />
         </>
     )
 }
