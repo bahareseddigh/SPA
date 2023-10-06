@@ -48,18 +48,11 @@ function Home(){
             </Row>
             <Row className='my-5'>
                 <h2 className='py-4'>دوره آموزشی</h2>
-                <Col>
-                    <CourseItem />
-                </Col>
-                <Col>
-                    <CourseItem />
-                </Col>
-                <Col>
-                    <CourseItem />
-                </Col>
-                <Col>
-                    <CourseItem />
-                </Col>
+                {courses.map( course => (
+                    <Col>
+                        <CourseItem {...course} />
+                    </Col>
+                ) )}
             </Row>
         </Container>
         </>
