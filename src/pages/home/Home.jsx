@@ -47,9 +47,9 @@ function Home(){
                 </Col>
             </Row>
             <Row className='my-5'>
-                <h2 className='py-4'>دوره آموزشی</h2>
+                <h2 className='py-4'>دوره های آموزشی</h2>
                 {courses.map( course => (
-                    <Col>
+                    <Col key={course.id} className='py-3' md={6} lg={4} xl={3}>
                         <CourseItem {...course} />
                     </Col>
                 ) )}
