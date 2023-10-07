@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import './CourseItem.css'
 
-function CourseItem({title, text, img}){
+function CourseItem({id, title, text, img}){
     return(
         <Card>
       <Card.Img variant="top" src={img} />
@@ -11,7 +11,7 @@ function CourseItem({title, text, img}){
         <Card.Title>{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
         <Button variant="primary">
-          <Link className='buy-btn'>خرید دوره</Link>
+          <Link to={`/course/${id}`} className='buy-btn'>خرید دوره</Link>
         </Button>
       </Card.Body>
     </Card>
