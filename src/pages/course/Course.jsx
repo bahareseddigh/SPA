@@ -1,5 +1,6 @@
 import MyNavbar from '../../components/navbar/Navbar'
 import './Course.css'
+import { courseData } from '../../data'
 function Course(){
     return(
         <>
