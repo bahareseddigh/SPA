@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom'
 function Course(){
 
     const courseId = useParams().courseId
+    const courseInfo = courseData.find( course => course.id == courseId )
+    console.log(courseInfo);
 
     return(
         <>
