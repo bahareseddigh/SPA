@@ -19,6 +19,7 @@ function Course(){
                 </Col>
                 <Col>
                     <h2 style={{fontFamily : 'Lalezar'}}>{courseInfo.title}</h2>
+                    <p><b>{courseInfo.text}</b></p>
                 </Col>
             </Row>
         </Container>
