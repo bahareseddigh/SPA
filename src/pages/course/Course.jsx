@@ -17,7 +17,9 @@ function Course(){
                 <Col>
                     <img src={courseInfo.img} />
                 </Col>
-                <Col></Col>
+                <Col>
+                    <h2 style={{fontFamily : 'Lalezar'}}>{courseInfo.title}</h2>
+                </Col>
             </Row>
         </Container>
         </>
