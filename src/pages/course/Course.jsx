@@ -2,6 +2,7 @@ import MyNavbar from '../../components/navbar/Navbar'
 import './Course.css'
 import { courseData } from '../../data'
 import { useParams } from 'react-router-dom'
+import { Col, Container, Row } from 'react-bootstrap'
 function Course(){
 
     const courseId = useParams().courseId
@@ -11,7 +12,12 @@ function Course(){
     return(
         <>
         <MyNavbar />
-        <h1>Course Page</h1>
+        <Container>
+            <Row>
+                <Col></Col>
+                <Col></Col>
+            </Row>
+        </Container>
         </>
     )
 }
