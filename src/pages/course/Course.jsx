@@ -14,7 +14,9 @@ function Course(){
         <MyNavbar />
         <Container>
             <Row>
-                <Col></Col>
+                <Col>
+                    <img src={courseInfo.img} />
+                </Col>
                 <Col></Col>
             </Row>
         </Container>
