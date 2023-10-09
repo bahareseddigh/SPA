@@ -13,7 +13,7 @@ function Home(){
     return(
         <>
         <MyNavbar />
-        <Container>
+        <Container className='py-4'>
             <Row className='my-5 align-items-center'>
                 <Col lg={6}>
                     <h1>برنامه نویسی با نکست وان کد</h1>
