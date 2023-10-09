@@ -2,10 +2,10 @@ import MyNavbar from '../../components/navbar/Navbar'
 import './Blog.css'
 function Blog(){
     return(
-        <>
-        <MyNavbar />
-        <h1>Blog Page</h1>
-        </>
+        <div className="blogWrapper">
+            <MyNavbar />
+            <h1>صفحه مقالات</h1>
+        </div>
     )
 }
 export default Blog
