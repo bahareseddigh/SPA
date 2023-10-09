@@ -2,6 +2,9 @@
     text-align: center;
 }
 
+.btn-container{
+    margin: 30px;
+}
 .link-btn{
     text-decoration: none;
     border: 1px solid gray;
