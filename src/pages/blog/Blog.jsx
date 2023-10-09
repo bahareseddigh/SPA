@@ -5,6 +5,7 @@ function Blog(){
         <div className="blogWrapper">
             <MyNavbar />
             <h1>صفحه مقالات</h1>
+            <hr />
         </div>
     )
 }
