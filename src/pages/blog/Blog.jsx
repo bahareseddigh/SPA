@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import MyNavbar from '../../components/navbar/Navbar'
 import './Blog.css'
 import PhpBlog from '../../components/blogItems/PhpBlog'
@@ -10,6 +10,11 @@ function Blog(){
             <MyNavbar />
             <h1>صفحه مقالات</h1>
             <hr />
+            <div className="btn-container">
+                <Link className='link-btn'>php blog</Link>
+                <Link className='link-btn'>js blog</Link>
+                <Link className='link-btn'>react blog</Link>
+            </div>
 
             <Routes>
                 <Route path='php' element={<PhpBlog />} />
