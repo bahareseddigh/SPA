@@ -16,6 +16,8 @@ function Blog(){
                 <Link className='link-btn'>react blog</Link>
             </div>
 
+            <hr />
+
             <Routes>
                 <Route path='php' element={<PhpBlog />} />
                 <Route path='js' element={<JsBlog />} />
