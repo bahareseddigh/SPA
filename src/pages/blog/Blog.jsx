@@ -1,6 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
 import MyNavbar from '../../components/navbar/Navbar'
 import './Blog.css'
+import PhpBlog from '../../components/blogItems/PhpBlog'
+import JsBlog from '../../components/blogItems/JsBlog'
+import ReactBlog from '../../components/blogItems/ReactBlog'
 function Blog(){
     return(
         <div className="blogWrapper">
@@ -9,9 +12,9 @@ function Blog(){
             <hr />
 
             <Routes>
-                <Route path='php' element={<h1>php blog</h1>} />
-                <Route path='js' element={<h1>javascript blog</h1>} />
-                <Route path='react' element={<h1>react blog</h1>} />
+                <Route path='php' element={<PhpBlog />} />
+                <Route path='js' element={<JsBlog />} />
+                <Route path='react' element={<ReactBlog />} />
             </Routes>
         </div>
     )
