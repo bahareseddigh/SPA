@@ -11,9 +11,9 @@ function Blog(){
             <h1>صفحه مقالات</h1>
             <hr />
             <div className="btn-container">
-                <Link className='link-btn'>php blog</Link>
-                <Link className='link-btn'>js blog</Link>
-                <Link className='link-btn'>react blog</Link>
+                <Link to='php' className='link-btn'>php blog</Link>
+                <Link to='js' className='link-btn'>js blog</Link>
+                <Link to='react' className='link-btn'>react blog</Link>
             </div>
 
             <hr />
