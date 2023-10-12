@@ -8,6 +8,7 @@ import ReactBlog from './components/blogItems/ReactBlog'
 import Login from './pages/login/Login'
 import Panel from './pages/panel/Panel'
 import Course from './pages/course/Course'
+import PrivateRoute from './components/PrivateRoute'
 
 function App(){
 
@@ -20,7 +21,7 @@ function App(){
             { path : 'react', element : <ReactBlog />}
         ]},
         { path : '/login' , element : <Login />},
-        { path : '/panel' , element : <Panel />},
+        { path : '/panel' , element : <PrivateRoute> <Panel /> </PrivateRoute> },
         { path : '/course/:courseId' , element : <Course />},
     ])
 
