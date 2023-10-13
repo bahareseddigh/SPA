@@ -35,13 +35,14 @@
   border: 0;
   padding: 15px;
   color: #FFFFFF;
+  transition: all .2s;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: rgb(91, 89, 119);
 }
 .form .message {
   margin: 15px 0 0;
