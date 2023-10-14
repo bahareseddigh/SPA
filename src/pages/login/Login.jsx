@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import MyNavbar from '../../components/navbar/Navbar'
 import './Login.css'
+import Swal from 'sweetalert2'
 function Login(){
 
     let [username, setUsername] = useState('')
