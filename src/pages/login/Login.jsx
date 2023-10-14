@@ -14,7 +14,7 @@ function Login(){
                 <form class="login-form">
                 <input onChange={ (e) => setUsername(e.target.value) } type="text" placeholder="username"/>
                 <input onChange={ (e) => setPassword(e.target.value) } type="password" placeholder="password"/>
-                <button>login</button>
+                <button type='button'>login</button>
                 </form>
             </div>
         </div>
