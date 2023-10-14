@@ -11,7 +11,7 @@ function Login(){
         <div class="login-page">
             <div class="form">
                 <form class="login-form">
-                <input type="text" placeholder="username"/>
+                <input onChange={ (e) => setUsername(e.target.value) } type="text" placeholder="username"/>
                 <input type="password" placeholder="password"/>
                 <button>login</button>
                 </form>
