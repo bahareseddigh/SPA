@@ -6,6 +6,14 @@ function Login(){
     let [username, setUsername] = useState('')
     let [password, setPassword] = useState('')
 
+    const submitHandler = () => {
+        if( username == 'admin' && password == '12345' ){
+            console.log('شما با موفقیت لاگین شدید');
+        }else{
+            console.log('شما لاگین نشدی');
+        }
+    }
+
     return(
         <>
         <MyNavbar />
