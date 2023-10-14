@@ -11,7 +11,12 @@ function Login(){
         if( username == 'admin' && password == '12345' ){
             console.log('شما با موفقیت لاگین شدید');
         }else{
-            console.log('شما لاگین نشدی');
+            Swal.fire({
+                title : 'Error!',
+                text : 'یوزرنیم یا پسورد شما اشتباه است',
+                icon : 'error',
+                confirmButtonText : 'بستن'
+            })
         }
     }
 
