@@ -22,7 +22,7 @@ function Login(){
                 <form className="login-form">
                 <input onChange={ (e) => setUsername(e.target.value) } type="text" placeholder="username"/>
                 <input onChange={ (e) => setPassword(e.target.value) } type="password" placeholder="password"/>
-                <button type='button'>login</button>
+                <button type='button' onClick={submitHandler}>login</button>
                 </form>
             </div>
         </div>
