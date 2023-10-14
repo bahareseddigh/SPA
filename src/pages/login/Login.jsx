@@ -12,7 +12,7 @@ function Login(){
 
     const submitHandler = () => {
         if( username == 'admin' && password == '12345' ){
-            console.log('شما با موفقیت لاگین شدید');
+            navigate('/panel')
         }else{
             Swal.fire({
                 title : 'Error!',
