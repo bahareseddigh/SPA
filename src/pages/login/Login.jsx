@@ -4,6 +4,7 @@ import './Login.css'
 function Login(){
 
     let [username, setUsername] = useState('')
+    let [password, setPassword] = useState('')
 
     return(
         <>
