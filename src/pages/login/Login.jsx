@@ -13,7 +13,7 @@ function Login(){
             <div class="form">
                 <form class="login-form">
                 <input onChange={ (e) => setUsername(e.target.value) } type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
+                <input onChange={ (e) => setPassword(e.target.value) } type="password" placeholder="password"/>
                 <button>login</button>
                 </form>
             </div>
