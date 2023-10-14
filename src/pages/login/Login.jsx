@@ -17,9 +17,9 @@ function Login(){
     return(
         <>
         <MyNavbar />
-        <div class="login-page">
-            <div class="form">
-                <form class="login-form">
+        <div className="login-page">
+            <div className="form">
+                <form className="login-form">
                 <input onChange={ (e) => setUsername(e.target.value) } type="text" placeholder="username"/>
                 <input onChange={ (e) => setPassword(e.target.value) } type="password" placeholder="password"/>
                 <button type='button'>login</button>
