@@ -2,10 +2,13 @@ import { useState } from 'react'
 import MyNavbar from '../../components/navbar/Navbar'
 import './Login.css'
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 function Login(){
 
     let [username, setUsername] = useState('')
     let [password, setPassword] = useState('')
+
+    const navigate = useNavigate()
 
     const submitHandler = () => {
         if( username == 'admin' && password == '12345' ){
