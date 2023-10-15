@@ -9,6 +9,10 @@ import { isLogin } from '../../utils';
 function MyNavbar(){
   const [loginStatus , setLoginStatus] = useState(isLogin() ? 'خروج' : 'ورود')
     const expand = 'md'
+    const logoutHandler = () => {
+      document.cookie = "username=admin; expires=Thu, 18 Dec 1970 12:00:00 UTC; path=/";
+      setLoginStatus('ورود')
+    }
     return(
         <Navbar style={{backgroundColor : 'rgb(186, 182, 253)'}} expand={expand} className="mb-3">
           <Container>
@@ -30,7 +34,11 @@ function MyNavbar(){
                   <NavLink to='/about' className='nav-link'>درباره ما</NavLink>
                   <NavLink to='/blog' className='nav-link'>بلاگ</NavLink>
                   <NavLink to='/panel' className='nav-link'>پنل</NavLink>
-                  <NavLink to='/login' className='nav-link'>{loginStatus}</NavLink>
+                  {isLogin() ? 
+                  <NavLink to='/login' onClick={logoutHandler} className='nav-link'>{loginStatus}</NavLink>
+                  : <NavLink to='/login' className='nav-link'>{loginStatus}</NavLink>
+
+                }
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
