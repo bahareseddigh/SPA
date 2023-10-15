@@ -12,7 +12,7 @@ function Login(){
 
     const submitHandler = () => {
         if( username == 'admin' && password == '12345' ){
-            document.cookie = "username=admin Smith; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/";
+            document.cookie = "username=admin; expires=Thu, 18 Dec 2027 12:00:00 UTC; path=/";
             navigate('/panel')
         }else{
             Swal.fire({
