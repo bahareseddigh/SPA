@@ -4,7 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
+import { useState } from 'react';
 function MyNavbar(){
+  const [loginStatus , setLoginStatus] = useState()
     const expand = 'md'
     return(
         <Navbar style={{backgroundColor : 'rgb(186, 182, 253)'}} expand={expand} className="mb-3">
