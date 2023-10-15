@@ -5,8 +5,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 import { useState } from 'react';
+import { isLogin } from '../../utils';
 function MyNavbar(){
-  const [loginStatus , setLoginStatus] = useState()
+  const [loginStatus , setLoginStatus] = useState(isLogin() ? 'خروج' : 'ورود')
     const expand = 'md'
     return(
         <Navbar style={{backgroundColor : 'rgb(186, 182, 253)'}} expand={expand} className="mb-3">
@@ -29,7 +30,7 @@ function MyNavbar(){
                   <NavLink to='/about' className='nav-link'>درباره ما</NavLink>
                   <NavLink to='/blog' className='nav-link'>بلاگ</NavLink>
                   <NavLink to='/panel' className='nav-link'>پنل</NavLink>
-                  <NavLink to='/login' className='nav-link'>ورود</NavLink>
+                  <NavLink to='/login' className='nav-link'>{loginStatus}</NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
